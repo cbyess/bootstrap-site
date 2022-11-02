@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>COLO Climbing</title>
+</head>
+
+<body class="text-center">
+
+    <!--Jumbotron-->
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row jumbo-image">
+                <img src="img/rc-logo-1.png" height="75px" class="image-fluid">
+            </div>
+        </div>
+    </header>
+    <!--Navbar-->
+<nav class="navbar navbar-expand-sm navbar-dark shadow sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#climbingNavbar"
+            aria-controls="climbingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="climbingNavbar">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i>
+                        About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="destinations.html"><i class="fa fa-list fa-lg"></i>
+                        Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="reservations.html"><i
+                            class="fa fa-address-card fa-lg"></i> Reservations</a></li>
+                <li class="nav-item"><a class="nav-link" href="location.html"><i class="fa fa-sign-in"></i>
+                        Climbing Near You</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!--header-->
+    <header class="masthead bg-overlay">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="cover-bg">
+                        <h1>-Six Destinations-<br>-Professional Assistance-<br>-CLimbs of a Lifetime-</h1>
+                        <button type="button" class="btn btn-lg prime-btn" data-bs-toggle="modal" data-bs-target="#reserveModal">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Reserve Campsite Modal-->
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Reserve a Campsite</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="row form-group">
+                                <label for="numCampers" class="col-sm-6 col-form-label">Climbing Destination</label>
+                                <div class="col">
+                                    <select id="numCampers" name="numCampers" class="form-control">
+                                        <option>Select...</option>
+                                        <option value="Garden of the Gods">Garden of the Gods</option>
+                                        <option value="Estes Park">Estes Park</option>
+                                        <option value="Flat Irons">Flat Irons</option>
+                                        <option value="Black Canyon">Black Canyon</option>
+                                        <option value="Kent Mountain">Kent Mountain</option>
+                                        <option value="Rocky Mountain National Park">Rocky Mountain National Park</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <div class="col-sm-6">
+                                    <input type="date" id="date" name="date" class="form-control" placeholder="Date">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label">Belay Assistance Needed?</label>
+                                <div class="col-2 btn btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-dark active">
+                                        <input type="radio" name="belayAssistance" id="yesAssistance" autocomplete="off"
+                                            value="yesAssistance" checked> Yes
+                                    </label>
+                                    <label class="btn btn-light">
+                                        <input type="radio" name="belayAssistance" id="noAssistance" autocomplete="off" value="noAssistance">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button type="submit" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
+                                    <a href="reservations.html" class="btn" style="background-color: #cc5500; color: white;" id=" ">Book Now</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Custom styles for this template -->
+    <h2>Climb Colorado's Breathtaking Routes</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm d-flex justify-content-center">
+                <div class="card card-pad" style="width: 18rem;">
+                    <img class="card-img-top" src="img/gotg-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title card-header">Garden of the Gods</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                          </ul>
+                        <a href="destinations.html" class="btn prime-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm d-flex justify-content-center">
+                <div class="card card-pad" style="width: 18rem;">
+                    <img class="card-img-top" src="img/estes-park-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title card-header">Estes Park</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                          </ul>
+                        <a href="destinations.html" class="btn prime-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm d-flex justify-content-center">
+                <div class="card card-pad" style="width: 18rem;">
+                    <img class="card-img-top" src="img/flat-irons-1.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title card-header">Flat Irons</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                          </ul>
+                        <a href="destinations.html" class="btn prime-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm d-flex justify-content-center">
+                <div class="card card-pad" style="width: 18rem;">
+                    <img class="card-img-top" src="img/blackcanyon-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title card-header">Black Canyon</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                          </ul>
+                        <a href="destinations.html" class="btn prime-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm d-flex justify-content-center">
+                <div class="card card-pad" style="width: 18rem;">
+                    <img class="card-img-top" src="img/kent-mountain-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title card-header">Kent Mountain</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                          </ul>
+                        <a href="destinations.html" class="btn prime-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm d-flex justify-content-center">
+                <div class="card card-pad" style="width: 18rem;">
+                    <img class="card-img-top" src="img/rmnp-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title card-header">Rocky Mountain National Park</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                          </ul>
+                        <a href="destinations.html" class="btn prime-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="location.html">Climbing Near You</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fab fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel:+8084245305"><i class="fa fa-phone"></i>
+                        1-808-424-5305</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:colo-climb@climbing.co"><i
+                            class="fa fa-envelope-o"></i> colo-climb@climbing.co</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
